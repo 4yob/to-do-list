@@ -80,18 +80,26 @@ body {
 
 .inputbar {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 1rem;
 }
 
 input {
+    width: 9rem;
     height: 2rem;
     border-radius: 1rem;
     border: 2px solid rgba(0, 0, 0, 0.329);
     text-align: center;
+    padding: 2%;
 }
 
-button {
+input::placeholder {
+    color: rgba(0, 0, 0, 0.329);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inputbar button {
     display: flex;
     justify-content: center;
     align-items: center;
