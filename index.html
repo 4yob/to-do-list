@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List DOM</title>
+    <link rel="icon" href="to-do-list-icon.png">
     <link rel="stylesheet" href="index.css">
     <script defer src="script.js"></script>
 </head>
@@ -12,21 +13,14 @@
         <div class="title">
             <h1>TO-DO LIST</h1>
         </div>
-        <section class="list">
-            <div class="task">
-                <div class="task-description">
-                    <p>oie</p>
-                </div>
-                <div class="task-button">
-                    <button><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
-                </div>
+        <form>
+            <div class="section1">
+                <input type="text" name="task" id="task" placeholder="Add Task" required>
+                <input type="datetime-local" name="taskDate" id="taskDate" required>
             </div>
-        </section>
-        <form class="inputbar">
-            <input type="text" id="taskDesc" placeholder="Adicionar Task">
-            <input type="datetime-local" id="taskDate">
-            <button onClick="adicionar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></button>
+            <button type="button" onclick="adicionar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></button>
         </form>
+        <div id="tasks"></div>
     </div>
 </body>
 </html>
